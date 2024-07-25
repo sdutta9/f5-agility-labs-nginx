@@ -221,7 +221,7 @@ Steps:
             :align: center
             :alt: arcadia app
 
-    #.  Try some attacks like injections or XSS: ``http://app-protect-centos.arcadia-finance.io/<script>``
+    #.  Try some attacks like injections or XSS: ``http://centos.arcadia-finance.io/<script>``
 
         .. note:: Other examples at the bottom of this page.
 
@@ -390,30 +390,30 @@ Steps:
     echo ""
     echo "---------------------------------------------------------------------"
     echo "Multiple decoding"
-    echo "Sending: curl -k 'http://app-protect-centos.arcadia-finance.io/three_decodin%2525252567.html'"
+    echo "Sending: curl -k 'http://centos.arcadia-finance.io/three_decodin%2525252567.html'"
     echo "---------------------------------------------------------------------"
-    curl -k "http://app-protect-centos.arcadia-finance.io/three_decodin%2525252567.html"
+    curl -k "http://centos.arcadia-finance.io/three_decodin%2525252567.html"
     sleep 3
     echo "-----------------------------------------------------------------------------"
     echo "Apache Whitespace"
-    echo "Sending: curl -k 'http://app-protect-centos.arcadia-finance.io/tab_escaped%09.html'"
+    echo "Sending: curl -k 'http://centos.arcadia-finance.io/tab_escaped%09.html'"
     echo "-----------------------------------------------------------------------------"
-    curl -k "http://app-protect-centos.arcadia-finance.io/tab_escaped%09.html"
+    curl -k "http://centos.arcadia-finance.io/tab_escaped%09.html"
     sleep 3
     echo "-----------------------------------------------------------------------------"
     echo "IIS Backslashes"
-    echo "Sending: curl -k 'http://app-protect-centos.arcadia-finance.io/regular%5cescaped_back.html'"
+    echo "Sending: curl -k 'http://centos.arcadia-finance.io/regular%5cescaped_back.html'"
     echo "-----------------------------------------------------------------------------"
-    curl -k "http://app-protect-centos.arcadia-finance.io/regular%5cescaped_back.html"
+    curl -k "http://centos.arcadia-finance.io/regular%5cescaped_back.html"
     sleep 3
     echo "-----------------------------------------------------------------------------"
     echo "Apache Whitespace"
-    echo "Sending: curl -k 'http://app-protect-centos.arcadia-finance.io/carriage_return_escaped%0d.html?x=1&y=2'"
+    echo "Sending: curl -k 'http://centos.arcadia-finance.io/carriage_return_escaped%0d.html?x=1&y=2'"
     echo "-----------------------------------------------------------------------------"
-    curl -k "http://app-protect-centos.arcadia-finance.io/carriage_return_escaped%0d.html?x=1&y=2"
+    curl -k "http://centos.arcadia-finance.io/carriage_return_escaped%0d.html?x=1&y=2"
     sleep 3
     echo "-----------------------------------------------------------------------------"
     echo "Cross site scripting"
-    echo "Sending: curl -k 'http://app-protect-centos.arcadia-finance.io/%25%25252541PPDATA%25'"
+    echo "Sending: curl -k 'http://centos.arcadia-finance.io/%25%25252541PPDATA%25'"
     echo "-----------------------------------------------------------------------------"
-    curl -k "http://app-protect-centos.arcadia-finance.io/%25%25252541PPDATA%25"    
+    curl -k "http://centos.arcadia-finance.io/%25%25252541PPDATA%25"    
